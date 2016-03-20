@@ -24,8 +24,11 @@
          `(funcall ,,name ,@,argsg))
        ',name)))
 
-(define-combinator I (x) x)
+(define-combinator I (x)
+  x)
 
-(define-combinator K (x y) x)
+(define-combinator K (x y)
+  x)
 
-(define-combinator S (x y z) (x z (y z)))
+(define-combinator S (x y z)
+  (x z (y z)))
